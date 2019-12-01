@@ -6,8 +6,7 @@
 #include "compact_trie.h"
 #include "slice.h"
 
-namespace opencdn {
-namespace loghub {
+namespace common {
 
 CompactTrie::CompactTrie(const Trie& trie) {
     _size = 0;
@@ -243,5 +242,4 @@ int CompactTrie::put(const Slice& key) {
     return 0;
 }
 
-} // end of namespace loghub
-} // end of namespace opencdn 
+} // end of namespace common 
